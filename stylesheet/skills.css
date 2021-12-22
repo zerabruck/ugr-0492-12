@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/*nav*/
+html{
+    position: relative;
+    
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    /*new*/
+    background-image: url(../picture/dark.jpg);
+    background-size: cover;
+    font-family: 'Patrick Hand', cursive;
+     font-size: 160%;
+     word-spacing: 0.3rem;
+    
+}
+header{
+    border-width: 2px;
+    
+    
+   
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    border-width:2px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom-style:ridge;
+}
+.header__navigation{
+    list-style-type: none;
+    margin: 1rem;
+}
+.header__link{
+    text-decoration:none;
+    color: #dcdae2e8;
+}
+/*img and list*/
+
+.article__section{
+    display: flex;
+    justify-content: space-between;
+}
+.article__section__second__image{
+    max-width:100%;
+}
+.article__section__first{
+    align-self:center;
+}
+.aside__section__hobbies{
+    list-style-type:none;
+    font-size: 3rem;
+    
+}
+.article__section__first{
+    list-style-type:none;
+    font-size: 3rem;
+}
+.aside__section__listhobbies{
+    margin-bottom: 400px;
+    
+}
+.aside__section__hobbies{
+    list-style-type:disc;
+    list-style-position: inside;
+}
+.article{
+    margin-bottom: 100px;
+}
+/*skills*/
+.article__section__first{
+    color: #dcdae2e8;
+    list-style-type:disc;
+}
+.aside__section__hobbies{
+    color: #dcdae2e8;
+}
+.article__section__first__header{
+    color: #dcdae2e8;
+}
+/*hobbies*/
+.article__aside{
+    text-align: right;
+    margin-right:3rem;
+}
+
+/*footer*/
+footer{
+    margin-top: 300px;
+}
+
+.footerlist__footer1{
+    display:flex;
+}
+
+.footerlist__footer2{
+    display:flex;
+}
+/*new*/
+.footerlist__footer3{
+    display: flex;
+}
+.footerlist{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+   
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-top-style:ridge;
+    
+    
+    
+   
+}
+.footerlist__itemfooter{
+    list-style-type:none;
+    margin:1em;
+    color: #dcdae2e8;
+}
+
+
+/*response*/
+@media screen and (max-width:952px){
+    .article__section{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:760px){
+      /*footer*/
+
+    .footerlist{
+        display:grid;
+        grid-template-columns:  1fr;
+       
+    }
+    /*new*/
+    .footerlist__footer1{
+     display: flex;
+     flex-direction: column;
+ }
+
+   article{
+       display: grid;
+       grid-template-columns: 1fr;
+   }
+
+
+}
+@media screen and (max-width:620px){
+     /*header*/
+
+   .header{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    border-width:2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+}
+@media screen and (max-width:440px){
+    .article__section__second__image{
+        display: none;
+    }
+    .article__aside{
+        text-align: left;
+        width: 100%;
+    }
+    .aside__section,article__section{
+        width:100%;
+    }
+    .aside__section__hobbies{
+        width: 100%;
+    }
+    .footerlist__itemfooter--on{
+        display: none;
+    }
+}

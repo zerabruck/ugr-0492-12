@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+html{
+    position: relative;
+    
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../picture/dark.jpg);
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+     /*new*/
+     font-family: 'Patrick Hand', cursive;
+     font-size: 160%;
+     word-spacing: 0.3rem;
+     color: #dcdae2e8;
+    
+}
+header{
+    border-width: 2px;
+    
+   
+   
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    border-width:2px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom-style:ridge;
+}
+.header__navigation{
+    list-style-type: none;
+    margin: 1rem;
+}
+.header__link{
+    text-decoration:none;
+    color: #dcdae2e8;
+}
+/*image*/
+.article__image{
+    width: 100%;
+    display:flex;
+    
+}
+.article__picture{
+    max-width: 100%;
+}
+
+.article__headerimage{
+    align-self: center;
+    font-size: 3rem;
+    
+}
+.article{
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 100px;
+    ;
+}
+
+/*table*/
+.table{
+    empty-cells: hide;
+    margin-bottom: 150px;
+}
+.tablerow{
+    color: #dcdae2e8;
+}
+.tablerow__header{
+    text-transform:uppercase;
+    border-bottom-width: 0.1em;
+    border-color:#6d6d6d;
+    
+    border-right-style: ridge;
+    border-bottom-style:ridge;
+    color: #dcdae2e8;
+}
+
+.tablerow__second{
+    background-color:#102027;
+
+    ;
+}
+/*footer*/
+footer{
+    margin-top: 300px;
+}
+
+.footerlist__footer1{
+    display:flex;
+}
+
+.footerlist__footer2{
+    display:flex;
+}
+/*new*/
+.footerlist__footer3{
+    display: flex;
+}
+.footerlist{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+   
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-top-style:ridge;
+    
+    
+    
+   
+}
+.footerlist__itemfooter{
+    list-style-type:none;
+    margin:1em;
+    color: #dcdae2e8;
+}
+
+
+
+/*response*/
+
+
+@media screen and (max-width:860px){
+    .article__image{
+        flex-direction: column;
+    }
+
+    /*footer*/
+
+    .footerlist{
+       display:grid;
+       grid-template-columns:  1fr;
+      
+   }
+   /*new*/
+   .footerlist__footer1{
+    display: flex;
+    flex-direction: column;
+}
+   /*header*/
+
+   .header{
+       display: flex;
+       flex-direction:column;
+       justify-content: center;
+       border-width:2px;
+       margin: 0px;
+       padding: 0px;
+   }
+   .footerlist__itemfooter--on{
+    display: none;
+}
+
+}

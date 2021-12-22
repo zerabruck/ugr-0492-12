@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+html{
+    position: relative;
+    
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../picture/dark.jpg);
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    /*new*/
+    font-family: 'Patrick Hand', cursive;
+    font-size: 160%;
+    word-spacing: 0.3rem;
+    color: #dcdae2e8;
+    
+    
+}
+header{
+    border-width: 2px;
+    
+    
+   
+}
+.header{
+    display: flex;
+    justify-content: center;
+    border-width:2px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom-style:ridge;
+}
+.header__navigation{
+    list-style-type: none;
+    margin: 1rem;
+}
+.header__link{
+    text-decoration:none;
+    color: #dcdae2e8;
+}
+
+/*image*/
+
+
+.article__image{
+    max-width: 100%;
+    border-radius: 200px;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 1em;
+    margin-bottom:100px;
+}
+/*paragraphs*/
+.article__main--side{
+    align-self:center;
+}
+.article__main{
+    width:60%;
+    margin:1em;
+    
+  
+}
+.article__main:first-letter{
+    text-transform: uppercase;
+    font-size: 240%;
+}
+.article__main--width{
+    width: 80%;
+}
+.article__button{
+    background-color:black ;
+    margin-bottom: 200px;
+}
+
+.article__linkcontact:hover{
+    color: rgba(243, 191, 22, 0.925);
+    
+    
+    
+    
+}
+.article__linkcontact{
+    text-decoration: none;
+    color: #dcdae2e8;
+    
+}
+
+/*footer*/
+footer{
+    margin-top: 300px;
+}
+
+.footerlist__footer1{
+    display:flex;
+}
+
+.footerlist__footer2{
+    display:flex;
+}
+/*new*/
+.footerlist__footer3{
+    display: flex;
+}
+.footerlist{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+   
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-top-style:ridge;
+    
+    
+    
+   
+}
+.footerlist__itemfooter{
+    list-style-type:none;
+    margin:1em;
+    color: #dcdae2e8;
+}
+
+
+@media screen and (max-width:766px){
+
+    .article{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1em;
+    }
+    .article__main{
+        width: 80%;
+        
+        
+    
+    }
+
+}
+
+@media screen and (max-width:540px){
+        /*footer*/
+
+        .footerlist{
+            display:grid;
+            grid-template-columns:  1fr;
+           
+        }
+        /*new*/
+        .footerlist__footer1{
+         display: flex;
+         flex-direction: column;
+     }
+        /*header*/
+     
+        .header{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            border-width:2px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .footerlist__itemfooter--on{
+            display: none;
+        }
+
+
+}
